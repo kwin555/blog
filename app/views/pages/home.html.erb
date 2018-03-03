@@ -1,0 +1,38 @@
+<div class= "col-10 offset-1">
+  <h1>Welcome to my Blog</h1>
+
+  <br />
+
+  <h2>1st Impressions with Firehose Project</h2>
+
+  <p>
+    My next project was to create a random quote generator. The project was titled SPLURTY. This was a whole new experience. I had to set up the files, create a database, make the initial commit on github.com/kwin555, and push it to heroku.
+    The next step was to crate a home page which was a very involved process. The first step is to generate a controller so I can get to the “root” or index aka the home page. I went to my routes .rb file and created a root link to quotes #index and made a index method for my view. Then I had to create a html file to actually tell rails what to display.
+    The next step was to generate a new quote model and a migration file to setup the database to store the quote saying and the quotes author. Lastly, I had to migrate the database. Now that the database was set up, the next step is to go back to my quotes controller and make an instance variable and tell it access my quote object in the database. After that, I can finally go to my html and add a h1 tag for my quote saying and a h2 tag for my author.
+  </p>
+  <hr />
+  <p>
+    Now that the page is functional, I think it’s to add some form to it. To make it look at I use Bootstrap’s classes. Bootstrap is used to create and style my topnav bar. I think bootstrap is a great to tool to center and position elements around the page. After using bootstrap, I decided I wanted to add the ability for users to add their own quotes. So I first had to create a new form.
+  </p>
+  <hr />
+  <p>
+  I created a new form by using rake routes to find the new action. I add this to my quotes controller and create a “new” html file to format the new form. Using rails gem feature, I added a new gem called ‘simple_form’ to crate a form. After that add my ruby code to my html file to create inputs for saying, author and a submit button. After, I see my new form page. I decided i needed to link my page to my index, so users don’t have to manually find it. I find the path via rake routes it happened to be new_quote_path. I similarly added paths to my logo, about page and my random quote displayer.
+  After creating the correct functionality, I went a step further and put the form on a modal so users can quickly access from the index. TAADAAAA!!!! Below is a link to my first web app!!!!!<a target="_blank" href="splurty-kevin-nguyen.herokuapp.com"> Splurty Here</a>
+  </p>
+
+<div class="row">
+  <div class= "col-12 col-sm-4">
+    <%= image_tag 'splurty.png', class: 'img-fluid' %>
+  </div>
+
+  <div class= "col-12 col-sm 7 offset-sm-1">
+    <h2 class= "text-center">Kevin Nguyen</h2>
+    <br />
+    <p>
+      Kevin Nguyen is a web developer and a former chemical engineer. He has experience in making web apps and calculating reaction rates.
+    </p>
+  </div>
+</div>
+<br class="clear" />
+
+</div>
