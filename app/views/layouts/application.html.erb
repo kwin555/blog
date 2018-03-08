@@ -31,7 +31,13 @@
 
     <br class="clear" />
     <div class="container">
-      <%= render 'layouts/messages' %>
+      <% flash.each do |name, msg| %>
+        <ul>
+          <li>
+            <%= msg %>
+          </li>
+        </ul>
+      <% end %>
       <%= yield %>
     </div>
     <div class="footer">
