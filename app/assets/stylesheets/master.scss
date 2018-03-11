@@ -1,9 +1,63 @@
+$navbar-default-bg: #215cba;
 @import 'bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 .clear {
   clear: both;
 }
+
+.blog-title {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.jumbotron {
+  background-image: asset-url('bg.jpg');
+  background-size: cover;
+  height: 550px;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.btn-xlarge {
+  font-size: 1.7em;
+  background-color: #1a0033;
+}
+
+.btn-xlarge:hover {
+  background-color: #1a0033;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  margin-left: 15px;
+}
+
 .circle {
     font-weight:bold;
     font-style: italic;
@@ -25,8 +79,9 @@
 }
 
 .slogan {
-  font-family: 'aller_lightitalic',sans-serif;
+  font-family: 'Lato',sans-serif;
   padding-top:26px;
+  font-size: 26px;
 }
 
 .links {
@@ -52,6 +107,20 @@
   font-size: 12px;
 }
 
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 .logo:hover {
   text-decoration: none;
 }
@@ -60,7 +129,7 @@
 }
 
 ::selection {
-  background-color: #f84342;
+  background-color: black;
 }
 
 header {
