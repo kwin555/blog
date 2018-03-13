@@ -1,7 +1,7 @@
 <h1 align="center">Listing all Articles</h1>
 <% @articles.each do |article| %>
 <div class="row">
-  <div class="col-xs-8 col-xs-offset-2">
+  <div class="col-8 col-offset-2">
     <div class="well well-lg">
       <div class ="article-title">
         <%= link_to article.title, article_path(article) %>
